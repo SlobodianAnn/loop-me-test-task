@@ -1,0 +1,200 @@
+.page-container{
+    background-image: url(img/P_bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+@media screen and (min-height: 800px) {
+    .page-container {
+      background-size: 123%;
+    }
+}
+.data-block-img {
+    width: 130px;
+    margin-left: 10px;
+}
+.headline-block{
+    text-align: center;
+    margin-top: 20px;
+}
+.headline-block-img{
+    width: 70%;
+    animation-name: showElement;
+    animation-duration: 2.5s;
+}
+.watches-container{
+    position: relative;
+    margin-top: 50px;
+    height: 65vw;
+}
+.watches-container img{
+    position: absolute;
+}
+.watches-container_WH-White{
+    right: -5px;
+    width: 49vw;
+    animation-name: showWhiteWatches;
+    animation-duration: 1s;
+}
+.watchers-container_WH-Lilac{   
+   right: 15vw;
+   width: 52vw;
+}
+.watches-container_WH-Pink{
+    width: 61vw;
+    top: -12px;
+    left: -7px;
+    animation-name: showPinkWatches;
+    animation-duration: 1s;
+}
+.price-block{
+    text-align: center;
+}
+.price-block-img {
+    width: 30vw;
+    animation-name: showElement;
+    animation-duration: 2.5s;
+}
+.footer-container{
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+.footer-container-cta{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 48vw;
+}
+.footer-container_fitbit-logo{
+    width: 30vw;
+}
+.intro-animation-watches-container{
+    animation-name: changeOnGallary;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.watches-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.wrapper{
+    position: relative;
+    width: 250px;
+    z-index: 1;
+}
+.slides {
+    top: 0;
+    left: -330px;
+}
+.gallary-container{
+    display: none;
+}
+.show-gallary{
+    display: block;
+    animation-name: smoothAppearance;
+    animation-duration: 1s;
+}
+.wrap-absolute{
+    position: relative;
+}
+.gallary-watches-img{
+    width: 250px;
+    height: 250px;
+    animation-name: showGallaryWatches;
+    animation-duration: 1s;
+    position: relative;
+    transition: all 1s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 85px solid transparent;
+}
+.gallary-arrow {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    margin-right: 0 -10px;
+}
+.color-buttons-wrapper{
+    max-width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s;
+    opacity: 1;
+    animation-name: smoothAppearance;
+    animation-duration: 1.5s;
+}
+.color-buttons-wrapper img{
+    width: 10vw;
+}
+.gallary-name-wrapper{
+    text-align: center;
+}
+.gallary-name-wrapper img {
+    width: 52%;
+    margin-top: 10px;
+}
+.gallary-price{
+    display: none;
+}
+.gallary-price-show{
+    animation-name: smoothAppearance;
+    animation-duration: 1s;
+    width: 33vw;
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    display: block;
+    animation-name: smoothAppearance;
+    animation-duration: 1.5s;
+}
+.charge-block{
+    display: none;
+}
+.showSlideBox{
+    display: block;
+}
+.slideWatchesImage {
+    animation-name: slideImage;
+    animation-duration: 1s;
+}
+.wrap-watch-img {
+    width: 66%;
+    display: flex;
+    position: relative;
+}
+.shifting {
+    transition: left .2s ease-out;
+}
+.hide-gallary-element{
+    display: none;
+    opacity: 0;
+}
+.landscape::before {
+    background-image: url(img/not_available.png);
+    content: '';
+    width: 100%;
+    padding: 596px 0 30px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color:white;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    z-index: 15;
+    background-position: 44% 25%;
+}
+.watch-name{
+    animation-name: smoothAppearance;
+    animation-duration: 1.5s;
+}
